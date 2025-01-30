@@ -1,27 +1,69 @@
+html,
 body {
-    background-color: #f8f9fa;
-    color: #212529;
+    height: 100%;
 }
 
-h1,
-h2 {
-    font-family: "Roboto", sans-serif;
+.home-bg {
+    background: url(media/kaneki.jpg) no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.home-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.content-overlay {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.remera-box {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.remera-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.remera-text {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 20px;
     font-weight: bold;
 }
 
-p {
-    font-size: 1.1rem;
+.remera-1 {
+    background: url(media/Arata\ Proto\ 3.png) no-repeat center center;
 }
 
-.navbar-nav .nav-link {
-    transition: background-color 0.3s ease;
+.remera-2 {
+    background: url(media/Remera\ proto\ 1\ Eva.png) no-repeat center center;
 }
 
-.navbar-nav .nav-link:hover {
-    background-color: #004085;
-    color: #fff;
-}
-
-footer {
-    border-top: 1px solid #dee2e6;
+.remera-3 {
+    background: url(media/remera\ proto\ 2\ eva.png) no-repeat center center;
 }
