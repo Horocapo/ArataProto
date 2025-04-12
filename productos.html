@@ -9,28 +9,51 @@
     <body>
         <header>
             <h1>Productos</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                    <li><a href="pedidos.html">Pedidos</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+            <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 estilo-nav">
+                <li class="nav-item">
+                        <a class="estilo-link" href="index.html">Inicio</a>
+                        </li>
+                <li class="nav-item">
+                        <a class="estilo-link" href="pedidos.html">Pedidos</a>
+                </li>
+                <li class="nav-item">
+                        <a class="estilo-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                        <a class="estilo-link" href="sobre-nosotros.html">Sobre nosotros</a>
+                </li>
+                    </ul>
             </nav>
         </header>
-        <main>
+        <main class="background-image-products">
             <section>
                 <h2>Nuestros Productos</h2>
                 <article>
-                    <img src="producto1.jpg" alt="Proto 01" />
-                    <h3>Remera Oversize Kaneki Kakuja</h3>
-                    <p>Precio: $35.000</p>
+                    <img src="producto1.jpg" alt="Proto 01" class="product-image" />
+                    <div class="product-info">
+                        <h3>Remera Oversize EVA 01 Titulo Evangelion</h3>
+                        <p class="price">Precio: $35.000</p>
+                        <img
+                            src="Media/Arata Proto 3.png"
+                            alt="Imagen ilustrativa Proto 01"
+                            class="illustrative-image"
+                        />
+                    </div>
                 </article>
                 <article>
-                    <img src="producto2.jpg" alt="Proto 02" />
-                    <h3>Remera Evangelion EVA 01 Berserker</h3>
-                    <p>Precio: $40.000</p>
+                    <img src="producto2.jpg" alt="Proto 02" class="product-image" />
+                    <div class="product-info">
+                        <h3>Remera Evangelion EVA 01 Berserker</h3>
+                        <p class="price">Precio: $40.000</p>
+                        <img
+                            src="Media/Remera proto 1 Eva.png"
+                            alt="Imagen ilustrativa Proto 02"
+                            class="illustrative-image"
+                        />
+                    </div>
                 </article>
             </section>
         </main>
